@@ -1,4 +1,4 @@
 before_install:
-- "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-science texlive-fonts-extra texlive-latex-recommended dvipng texlive-lang-cyrillic"
+- "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-science texlive-fonts-extra texlive-latex-recommended dvipng texlive-lang-cyrillic latex-beamer"
 script:
 - make
