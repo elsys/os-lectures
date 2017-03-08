@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg2176"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   version="1.0"
+   sodipodi:docbase="/home/lubo/school/workspace/os04/pics"
+   sodipodi:docname="04-five-state-process-scheduling-2-queues.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs2178">
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path3243"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path3246"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Send"
+       style="overflow:visible;">
+      <path
+         id="path7431"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.2) rotate(180) translate(6,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10000"
+     objecttolerance="10000"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="589.89137"
+     inkscape:cy="595.49732"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     width="1052.3622px"
+     height="744.09448px"
+     showgrid="true"
+     inkscape:object-bbox="true"
+     inkscape:object-points="true"
+     inkscape:object-nodes="true"
+     inkscape:grid-points="true"
+     inkscape:guide-points="true"
+     inkscape:window-width="1680"
+     inkscape:window-height="996"
+     inkscape:window-x="0"
+     inkscape:window-y="6" />
+  <metadata
+     id="metadata2181">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g16996"
+       inkscape:export-filename="/home/lubo/school/workspace/os04/pics/04-five-state-process-scheduling-2-queues.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path14954"
+         d="M 410,239.09448 L 285,239.09448 L 285,193.99227 M 599.53125,142.34449 L 640,142.21948 L 640,239.09448 L 443.85714,239.09448"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path7537"
+         d="M 433,135.09448 L 520.46876,135.09448"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         id="path8188"
+         d="M 230,135.09448 L 317.46876,135.09448"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text10176"
+         y="129.09448"
+         x="660"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="129.09448"
+           x="660"
+           id="tspan5394"
+           sodipodi:role="line">Край</tspan></text>
+      <path
+         sodipodi:nodetypes="cc"
+         id="path5382"
+         d="M 600,135.09448 L 687.46876,135.09448"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text5384"
+         y="129.09448"
+         x="236"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="129.09448"
+           x="236"
+           id="tspan5396"
+           sodipodi:role="line">Начало</tspan></text>
+      <rect
+         y="105.09448"
+         x="524.53125"
+         height="60"
+         width="75"
+         id="rect7494"
+         style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text7496"
+         y="132.69946"
+         x="561.99463"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="132.69946"
+           x="561.99463"
+           id="tspan7500"
+           sodipodi:role="line">Централен</tspan><tspan
+           y="142.69946"
+           x="561.99463"
+           id="tspan7502"
+           sodipodi:role="line">процесор</tspan></text>
+      <g
+         transform="translate(0,1)"
+         id="g7522">
+        <rect
+           style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect5520"
+           width="120"
+           height="20"
+           x="320"
+           y="124.09448"
+           ry="0" />
+        <rect
+           style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect7510"
+           width="20"
+           height="19.999985"
+           x="320.08929"
+           y="124.09448" />
+        <rect
+           style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect7512"
+           width="20.089285"
+           height="19.999985"
+           x="340"
+           y="124.09448" />
+        <rect
+           style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect7514"
+           width="19.910706"
+           height="19.946428"
+           x="360"
+           y="124.09448" />
+        <rect
+           style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect7516"
+           width="20.178568"
+           height="19.999985"
+           x="380"
+           y="124.09448" />
+        <rect
+           style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect7518"
+           width="20.17857"
+           height="19.999985"
+           x="400"
+           y="124.09448" />
+        <rect
+           style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect7520"
+           width="19.910713"
+           height="20"
+           x="420"
+           y="124.09448" />
+      </g>
+      <text
+         sodipodi:linespacing="100%"
+         id="text7531"
+         y="111.09448"
+         x="322"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="111.09448"
+           x="322"
+           id="tspan13947"
+           sodipodi:role="line">Опашка за</tspan><tspan
+           y="121.09448"
+           x="322"
+           id="tspan13949"
+           sodipodi:role="line">готови процеси</tspan></text>
+      <path
+         sodipodi:nodetypes="ccccc"
+         id="path7541"
+         d="M 599.53125,149.48734 L 619.87072,149.66236 L 619.99965,193.9733 L 285,194.09448 L 285,139.15969"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow1Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="100%"
+         id="text9487"
+         y="189.09448"
+         x="474"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="189.09448"
+           x="474"
+           id="tspan13967"
+           sodipodi:role="line">Изтекъл отрязък време</tspan></text>
+      <g
+         transform="translate(0,2)"
+         id="g14945">
+        <rect
+           style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect13953"
+           width="120"
+           height="20"
+           x="320"
+           y="227.09448"
+           ry="0" />
+        <rect
+           style="fill:#f07a02;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect13955"
+           width="20"
+           height="19.999985"
+           x="320.08929"
+           y="227.09448" />
+        <rect
+           style="fill:#f07a02;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect13957"
+           width="20.089285"
+           height="19.999985"
+           x="340"
+           y="227.09448" />
+        <rect
+           style="fill:#f07a02;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect13959"
+           width="19.910706"
+           height="19.946428"
+           x="360"
+           y="227.09448" />
+        <rect
+           style="fill:#f07a02;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect13961"
+           width="20.178568"
+           height="19.999985"
+           x="380"
+           y="227.09448" />
+        <rect
+           style="fill:#f07a02;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect13963"
+           width="20.17857"
+           height="19.999985"
+           x="400"
+           y="227.09448" />
+        <rect
+           style="fill:#f07a02;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect13965"
+           width="19.910713"
+           height="20"
+           x="420"
+           y="227.09448" />
+      </g>
+      <text
+         sodipodi:linespacing="100%"
+         id="text15925"
+         y="261.09448"
+         x="323"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="261.09448"
+           x="323"
+           id="tspan15931"
+           sodipodi:role="line">Опашка за</tspan><tspan
+           y="271.09448"
+           x="323"
+           id="tspan15933"
+           sodipodi:role="line">блокирани процеси</tspan></text>
+      <text
+         sodipodi:linespacing="100%"
+         id="text15937"
+         y="250.09448"
+         x="474"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="250.09448"
+           x="474"
+           id="tspan15941"
+           sodipodi:role="line">Блокиране на входно/изходна</tspan><tspan
+           y="260.09448"
+           x="474"
+           id="tspan15943"
+           sodipodi:role="line">операция</tspan></text>
+    </g>
+  </g>
+</svg>

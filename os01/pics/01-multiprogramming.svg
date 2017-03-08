@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg2161"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   version="1.0"
+   sodipodi:docbase="/home/lubo/school/workspace/os01/pics"
+   sodipodi:docname="01-multiprogramming.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs2163" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10000"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="595.95695"
+     inkscape:cy="398.78169"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="true"
+     width="1052.3622px"
+     height="744.09449px"
+     units="px"
+     inkscape:object-bbox="true"
+     inkscape:object-points="true"
+     inkscape:object-nodes="true"
+     inkscape:grid-points="true"
+     inkscape:window-width="1680"
+     inkscape:window-height="993"
+     inkscape:window-x="0"
+     inkscape:window-y="6" />
+  <metadata
+     id="metadata2166">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g5210"
+       inkscape:export-filename="/home/lubo/school/workspace/os01/pics/01-multiprogramming.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="54.094482"
+         x="200"
+         height="360"
+         width="180"
+         id="rect2169"
+         style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none" />
+      <rect
+         y="352.1553"
+         x="200"
+         height="61.939186"
+         width="180"
+         id="rect5113"
+         style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5115"
+         y="375.32788"
+         x="289.50195"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="375.32788"
+           x="292.97852"
+           id="tspan5117"
+           sodipodi:role="line">Операционна </tspan><tspan
+           id="tspan5119"
+           y="400.32788"
+           x="289.50195"
+           sodipodi:role="line">система</tspan></text>
+      <g
+         id="g5174">
+        <rect
+           style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect5121"
+           width="180"
+           height="67.680222"
+           x="200"
+           y="283.46494" />
+        <text
+           xml:space="preserve"
+           style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+           x="290.02441"
+           y="323.34509"
+           id="text5123"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan5125"
+             x="290.02441"
+             y="323.34509">Задание 1</tspan></text>
+      </g>
+      <rect
+         y="148.39644"
+         x="199.99644"
+         height="134.13698"
+         width="180.00356"
+         id="rect5134"
+         style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:4.22346544;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5156"
+         y="221.50497"
+         x="290.20508"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="221.50497"
+           x="290.20508"
+           id="tspan5160"
+           sodipodi:role="line">Задание 2</tspan></text>
+      <rect
+         y="80.094482"
+         x="200"
+         height="67.680222"
+         width="180"
+         id="rect5181"
+         style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5183"
+         y="119.97464"
+         x="290.02441"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="119.97464"
+           x="290.02441"
+           id="tspan5190"
+           sodipodi:role="line">Задание 3</tspan></text>
+    </g>
+    <g
+       id="g5276"
+       inkscape:export-filename="/home/lubo/school/workspace/os01/pics/01-single-program.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         y="54.094482"
+         x="534"
+         height="360"
+         width="180"
+         id="rect5229"
+         style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="352.1553"
+         x="534"
+         height="61.939186"
+         width="180"
+         id="rect5231"
+         style="fill:#f0d702;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5233"
+         y="375.32788"
+         x="623.50195"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="375.32788"
+           x="626.97852"
+           id="tspan5235"
+           sodipodi:role="line">Операционна </tspan><tspan
+           id="tspan5237"
+           y="400.32788"
+           x="623.50195"
+           sodipodi:role="line">система</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5249"
+         y="216.13452"
+         x="623.81934"
+         style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="216.13452"
+           x="623.81934"
+           id="tspan5274"
+           sodipodi:role="line">Задание</tspan></text>
+    </g>
+  </g>
+</svg>

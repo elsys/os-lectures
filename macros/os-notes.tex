@@ -1,0 +1,112 @@
+
+
+\usepackage{cmap}
+%\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bulgarian]{babel}
+\selectlanguage{bulgarian}
+
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{rcsinfo}
+\usepackage{pgf}
+\usepackage{supertabular}
+\usepackage{rotating}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=blue,
+	urlcolor=blue,
+	anchorcolor=blue,
+	citecolor=blue
+}
+
+\lstset{language=C++, 
+  numbers=left, 
+  numberstyle=\tiny,
+  stepnumber=1, 
+  numbersep=3pt, 
+  tabsize=2, 
+  texcl,
+  basicstyle=\ttfamily\small,
+  identifierstyle=\ttfamily\small,
+  keywordstyle=\sffamily\bfseries\small,
+  extendedchars=true, inputencoding=utf8,
+  backgroundcolor=\color[rgb]{1,1,0.845},
+  escapeinside={/*@}{@*/}}
+
+%\usepackage{algpseudocode}
+%\usepackage[ruled]{algorithm}
+
+\newcommand{\Cpp}{{\ttfamily\bfseries C++}}
+\newcommand{\CC}{{\ttfamily\bfseries C}}
+
+\definecolor{outputcolor}{rgb}{0.0,0.0,0.5}
+\newcommand{\aout}[1]{\color{outputcolor}{\begin{verbatim}#1\end{verbatim}}}
+
+% \usepackage[T2A]{fontenc}
+% \usepackage[cp1251]{inputenc}
+% \usepackage[bulgarian]{babel}
+\selectlanguage{bulgarian}
+
+
+
+
+\newcommand{\lubo}{%
+\author[Л.~Чорбаджиев]{Любомир Чорбаджиев\inst{1} \\ 
+{\ttfamily lchorbadjiev@elsys-bg.org}}
+\institute[ELSYS] % (optional, but mostly needed)
+{
+\inst{1}%
+Технологическо училище ``Електронни системи'' \\
+Технически университет, София
+}}
+
+\newcommand{\osauthors}{%
+\author{
+	В.Кетипов\\ 
+	\and
+	Н.Димитров \\ 
+	\and
+	{Х.Стефанов \\
+	{\ttfamily elsys.os.2014@gmail.com}}
+}
+\institute[ELSYS] % (optional, but mostly needed)
+{
+\inst{1}%
+Технологическо училище ``Електронни системи'' \\
+Технически университет, София
+}}
+
+\titlegraphic{\href{http://creativecommons.org/licenses/by-sa/3.0/}{\includegraphics{../macros/cc.png}}}
+
+\newcommand{\ie}{т.~е.\ }
+
+\newcounter{probcounter}[section]
+\newenvironment{prob}[1][]%
+        {\smallskip%
+         \noindent\refstepcounter{probcounter}%
+          \textbf{\theprobcounter${}^{#1}$.}\ }%
+   {\medskip}
+
+\mode<article>
+{
+
+}
+
+\mode<presentation>
+{
+  \usetheme[secheader=true]{Madrid}
+  \usecolortheme{crane}
+  \usefonttheme[onlylarge]{structurebold}
+  \setbeamercovered{transparent}
+}
+
+\usepackage[unicode]{hyperref}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

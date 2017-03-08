@@ -1,0 +1,283 @@
+\documentclass[ignorenonframetext, hyperref=unicode]{beamer}
+
+\input{../macros/os-notes.tex}
+
+\title[Указатели и динамична памет]{Указатели и динамична памет} 
+\osauthors
+\date{\today}
+
+\begin{document}
+
+\frame{\maketitle}
+
+\begin{frame}
+\frametitle{Съдържание}
+\tableofcontents %[hideallsubsections]
+\end{frame}
+
+%-------------------------------------------------------------------- SECTION -
+\section{Въведение}
+
+%---------------------------------------------------------------------- SLIDE -
+\begin{frame}
+\frametitle{Въведение}
+\begin{itemize}
+  \item Компютърна паметта представлява проста последователност от байтове.
+  \item По никакъв начин не е обозначено къде започват едни данни и къде свършват.
+  \item Няма означение и за техния тип, предназначение или име.
+\end{itemize}
+\end{frame}
+
+%---------------------------------------------------------------------- SLIDE -
+\begin{frame}
+\frametitle{Въведение}
+\begin{itemize}
+  \item Когато една програма на C бъде компилирана, тя се трансформира от код на езика C в машинен код.
+  \item Машинният код представлява поредица от инструкции, които процесорът разбира.
+  \item В този машинен код за обръщение към данни от паметта се използват само и единствено адреси.
+\end{itemize}
+\end{frame}
+
+%---------------------------------------------------------------------- SLIDE -
+\begin{frame}
+\frametitle{Адрес}
+\begin{itemize}
+  \item Адресът в паметта представлява отместване от началото й.
+  \item Тъй като рядко ни е необходим само един бит от паметта, е въведено по-голямото понятие байт.
+  \item Отместването се измерва в байтове. Тоест адрес 100 означава, че данните се намира на 100 байта след началото на паметта.
+\end{itemize}
+\end{frame}
+
+%---------------------------------------------------------------------- SLIDE -
+\begin{frame}
+\frametitle{Байт}
+\begin{itemize}
+  \item След като адресите са в байтове, то ние не можем да подадем инструкция към процесора, която да прочете само един бит
+  \item Поради тази причина определeнието за байт е най-малката адресируема единица, т.е. най-малкото количество данни, с които процесорът може да работи.
+  \item В почти всички случаи един байт е 8 бита, което е избрано, тъй като може да представи един символ.
+  \item За работа с определени битове от даден байт трябва да използваме побитови операции на процесора, които променят данните бит по бит, но резултатът от тях винаги е байт.
+\end{itemize}
+\end{frame}
+
+
+%-------------------------------------------------------------------- SECTION -
+\section{Адреси и указатели}
+
+
+%---------------------------------------------------------------------- SLIDE -
+\begin{frame}[containsverbatim]
+\frametitle{Адреси в C}
+\begin{itemize}
+  \item В езикът C можем да видим адресът на данните, които използваме.
+  \item Това се постига чрез оператора \&
+  \item Адресите обикновено се извеждат в шестнайсетична бройна система.
+\end{itemize}
+\begin{lstlisting}
+	int a = 42;
+	printf("%p\n", (void *) &a); //0x7fff02bf4bac
+\end{lstlisting}
+
+\end{frame}
+
+%---------------------------------------------------------------------- SLIDE -
+\begin{frame}[containsverbatim]
+\frametitle{Тип на указател}
+\begin{itemize}
+  \item Тъй като указателя е просто отместване, ние трябва да укажем колко байтa искаме да прочетем
+  \item Поради това указателите имат тип - int*, char*, long*, double* и други.
+  \item В езикът C има и указател без тип - void*. За да прочетем нещо от указател void*, трябва да го превърнем към указател от някой друг тип.
+\end{itemize}
+\begin{lstlisting}
+	int a = 42;
+	void *p = &a;
+	int b = *p; // Грешка
+	int c = *(int *)p; //42
+\end{lstlisting}
+\end{frame}
+
+
+%-------------------------------------------------------------------- SECTION -
+\section{Динамична памет}
+
+%---------------------------------------------------------------------- SLIDE -
+\begin{frame}[containsverbatim]
+\frametitle{Локални променливи}
+\begin{itemize}
+  \item В езикът C част от паметта се управлява автоматично - заделя се при влизане в дадена функция и се освобождава при излизането от нея.
+\end{itemize}
+\begin{lstlisting}
+	void func1() {
+		int a = 5;
+		int b = 6;
+	}
+	
+	void func2() {
+		int k;
+		func1();
+	}
+	
+	int main() {
+		func2();
+	}
+
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{Динамична памет}
+\begin{itemize}
+  \item Възможно е и ние да управляваме ръчно паметта, което се налага в множество случаи в C
+  \item За да използваме някакъв участък от паметта е необходимо да поискаме памет от операционната система.
+  \item Това се налага, тъй като ОС се грижи да разпределя паметта между различните процеси.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{malloc}
+\begin{itemize}
+  \item За да заделим памет се използва системната функция malloc, която приема като аргумент броя байтове, които искаме да заделим
+  \item malloc върща указател към заделената памет
+  \item Ако malloc върне NULL, то това означава грешка. В повечето случаи причината е липсата на памет.
+\end{itemize}
+\begin{lstlisting}
+	char *p = malloc(1); //Заделя 1 байт
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{sizeof}
+\begin{itemize}
+  \item Важно е да се подава правилния брой байтове към malloc
+  \item За целта се използва оператора sizeof
+  \item sizeof връща колко байта са необходими за даден тип
+\end{itemize}
+\begin{lstlisting}
+	struct point {
+		double x;
+		double y;
+	} 
+
+	//Заделя памет за 1 int
+	int *p1 = malloc(sizeof(int)); 
+	
+	 //Заделя памет за 2 double
+	struct point *p2 = malloc(sizeof(struct point));
+	
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{sizeof}
+\begin{itemize}
+  \item sizeof(char *) НЕ е равно на sizeof(char)
+  \item sizeof(char) връща броя байтове, необходими за запомнянето на един char
+  \item sizeof(char*) връща броя байтове, необходими за запомнянето на един указател
+  \item Всички указатели са една и съща големина, определена от архитектурата на процесора (32 или 64 бита)
+  \item sizeof(char*) = sizeof(int*) = sizeof(double*)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{sizeof}
+\begin{itemize}
+	\item За да запомним един адрес винаги са ни необходими един и същи брой байтове, независимо от типа.
+	\item Типът определя какво седи на този адрес, а не големината на самия адрес.
+	\item Адресът просто показва къде започват данните в паметта и поради това големината му не зависи от това какво се намира на този адрес.
+\end{itemize}
+\begin{lstlisting}
+	//Големината в байтове е примерна
+	char a = 'X'; //1 байт
+	char *pa = &a; //4 байта(при 32 битови процесори)
+	
+	int b = 42; //4 байта
+	int *pb = &b; //4 байта
+	
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{Масиви}
+\begin{itemize}
+	\item Заделянето на масив динамично е аналогично с заделянето на една променлива.
+	\item Единствената разлика е, че е необходимо да заделим памет за всеки елемент.
+\end{itemize}
+\begin{lstlisting}
+	//Големината в байтове е примерна
+	
+	//Масив от 100 елемента, 400 байта
+	int *arr = malloc(100 * sizeof(int));
+	
+	//Масив от 100 елемента, 100 байта
+	char *arr = malloc(100 * sizeof(char)); 
+	
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{Адресна аритметика}
+\begin{itemize}
+	\item Възможно е да добавяме и изваждаме числа от указател.
+	\item Така можем да достъпваме следващите елементи от масив
+	\item Операторът arr[i] е просто по-удобен запис за *(arr + i);
+\end{itemize}
+\begin{lstlisting}
+	//Масив от 100 елемента, 400 байта
+	int *arr = malloc(100 * sizeof(int));
+	arr[0] = 5; //Първият елемент
+	arr[1] = 6; //Вторият елемент
+	
+	printf("%d\n", *(arr + 1)); //Извежда 6
+	
+	arr++;
+	printf("%d\n", arr[0]); //Извежда 6
+	printf("%d\n", arr[-1]); //Извежда 5
+	
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{Адресна аритметика}
+\begin{itemize}
+	\item Нека приемем, че имаме масив от int елемента, започващи от адрес 0x100
+	\item Ако приемем, че за един int са необходими 4 байта, то втория елемент ще намира на адрес 0x104
+	\item Нека приемем, че имаме масив от char елемента, започващи от адрес 0x500
+	\item Ако приемем, че за един char е необходим 1 байт, то втория елемент ще намира на адрес 0x501
+\end{itemize}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{Адресна аритметика}
+\begin{itemize}
+	\item Операторите +, -, [] взимат предвид тези особености
+	\item Очевидно не можем да инкрементираме void*, тъй като не знаем големината на елемента, към който сочи.
+\end{itemize}
+\begin{lstlisting}
+	int *arr = malloc(100 * sizeof(int));
+	printf("%p\n", (void *) arr); //0x100
+	arr++;
+	printf("%p\n", (void *) arr); //0x104
+	
+	char *carr = malloc(100 * sizeof(char));
+	printf("%p\n", (void *) carr); //0x500
+	carr++;
+	printf("%p\n", (void *) carr); //0x501
+	
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{Освобождаване на паметта}
+\begin{itemize}
+	\item За да укажем на ОС, че вече не ни е необходима даден памет е необходимо да я освободим.
+	\item Това става чрез функцията free.
+	\item Освобождаването на памет трябва да става възможно най-скоро след като вече не ни е необходима, за да могат други програми да я използват.
+\end{itemize}
+\begin{lstlisting}
+	int *arr = malloc(100 * sizeof(int));
+	....
+	....
+	free(arr);
+\end{lstlisting}
+\end{frame}
+
+\end{document}
