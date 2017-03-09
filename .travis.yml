@@ -4,6 +4,8 @@ before_install:
   dvipng texlive-lang-cyrillic latex-beamer
 script:
 - make
+- rm -rf */*.pdf
+- make
 deploy:
   provider: releases
   api_key:
