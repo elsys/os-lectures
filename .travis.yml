@@ -6,7 +6,7 @@ script:
 - make
 - rm -rf */*.pdf
 - make
-before_deploy
+before_deploy:
 - mkdir build
 - cp */*.pdf build/
 deploy:
