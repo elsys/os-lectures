@@ -10,12 +10,11 @@ before_deploy:
 - mkdir build
 - cp */*.pdf build/
 deploy:
-  provider: pages
-  github_token:
+  provider: releases
+  api_key:
     secure: JDjPBQjU8psBkpf03ID3ZYwLxg2znCP4RxfkllxJQ1X0l+rxFYoWVlupUKbU9FJ/b5cB4vQ1bs9+Duii54RBEMn/kkq15W57TPovzpu2bcD7cUh6w7U62fsFHeIaLon32RWGDHO6cBGnaMxqE5FeFlQA28NSF8mg78yHQaG04Pl6roDMGALmz/UrEqw+bHCv3F7SIK+1qxyrOWhzlsRCKhx5Ci20eWrw7wwE1kcww0XzXmriIZuc9SviZiPP70G37ShCKpLMRM/s/iMXW15nJip4uTqYw5RfUUmqxrGVrRJKKKIEC3iXhimOCAsQxie4Rotvhn/vrEOXeSfnbalFiiF1pNQn0cUzO6OiIcV71YB0ghCJgZkrMmi7gy9h2oxgwd9ZoXK2uTUcwLjssSRi+5O6BBlslmLAOKl01VWA/bapxnmcCnpqnMQTCX6vckMf4wHVUsthFqcCa9tRHVFZrrEOwb1w7pSghY7/BxH++cK++R2RnQf3/mC7/RMJSQkY3MJHeD95ckjnZsdhO0r2qxd8COh6DunawXqgGQ97Y3ooChrbk9h4ADK9KyS7z/udXw5bZ8p7r9ynwIREGcO3gmONOIEarNmdHUN7xV9qeIbFxKDIochdDcTXe/UaH4tvQRwKut8MEde4onNtNAsbdBYkeR1uJM238zApvI7JQ5s=
   file_glob: true
   file: '*/*.pdf'
   on:
-    branch: master
-  local_dir: build
-  target_branch: master
+    repo: elsys/os-lectures
+    tags: true
