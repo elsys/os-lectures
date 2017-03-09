@@ -12,3 +12,4 @@ deploy:
   file: '*/*.pdf'
   on:
     repo: elsys/os-lectures
+    tags: true
