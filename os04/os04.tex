@@ -346,66 +346,6 @@ child process finished 0...
 \end{itemize}
 \end{itemize}
 \end{frame}
-
-%---------------------------------------------------------------------- SLIDE -
-\begin{frame}\frametitle{Производител/потребител}
-\begin{itemize}
-\item Основна парадигма за сътрудничество на процеси.
-\item Процесът {\em производител} произвежда информацията, която се използва от
-процеса {\em потребител}.
-\item Съществуват две модификации на тази парадигма:
-\begin{itemize}
-  \item Производител/потребител с неограничен буфер -- няма граница на размера
-  на буфера.
-  \item Производител/потребител с ограничен буфер -- буфера е с ограничен размер.
-\end{itemize}
-\end{itemize}
-\end{frame}
-
-%---------------------------------------------------------------------- SLIDE -
-\begin{frame}[containsverbatim]
-\frametitle{Производител/потребител: решение с обща памет}
-\begin{lstlisting}
-#define BUFFER_SIZE 10
-typedef struct {
-	//...
-} item_t;
-item_t buffer[BUFFER_SIZE];
-int in=0;
-int out=0;
-\end{lstlisting}
-\end{frame}
-
-%---------------------------------------------------------------------- SLIDE -
-\begin{frame}[containsverbatim]
-\frametitle{Производител}
-\begin{lstlisting}
-	item_t nextProduced;
-
-	while (1) {
-		while (((in + 1) % BUFFER_SIZE) == out)
-			; /* do nothing */
-		buffer[in] = nextProduced;
-		in = (in + 1) % BUFFER_SIZE;
-	}
-\end{lstlisting}
-\end{frame}
-
-
-%---------------------------------------------------------------------- SLIDE -
-\begin{frame}[containsverbatim]
-\frametitle{Потребител}
-\begin{lstlisting}
-	item_t nextConsumed;
-
-	while (1) {
-		while (in == out)
-			; /* do nothing */
-		nextConsumed = buffer[out];
-		out = (out + 1) % BUFFER_SIZE;
-	}
-\end{lstlisting}
-\end{frame}
-        
+       
 
 \end{document}
